@@ -1,0 +1,17 @@
+name = "blogme-worker"
+
+account_id = "53b15163e8d32fa2effae703569b2b02"
+workers_dev = true
+compatibility_date = "2023-06-01"
+
+main = "./worker/worker.js"
+
+[[kv_namespaces]]
+binding = "BLOG_CONTENT"
+id = "51e4ad8cbadf4fa893067a64e0ce602d"
+
+[[r2_buckets]]
+binding = "ATTACHMENTS_BUCKET"
+bucket_name = "attachements"
+preview_bucket_name = "attachements"
+
