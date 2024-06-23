@@ -15,3 +15,6 @@ binding = "ATTACHMENTS_BUCKET"
 bucket_name = "attachements"
 preview_bucket_name = "attachements"
 
+[site]
+bucket = "./frontend"
+entry-point = "./worker"
